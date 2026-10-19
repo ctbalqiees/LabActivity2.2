@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Page Layout with Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px;
+    }
+    .vertical-text {
+      writing-mode: vertical-rl; /* Rotates text vertically */
+      text-orientation: mixed;
+      font-style: italic;
+    }
+    .banner {
+      font-weight: bold;
+      font-style: italic;
+      font-size: 20px;
+    }
+    .content {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="3" class="banner">Banner</td>
+    </tr>
+    <tr>
+      <td class="vertical-text">Navigation</td>
+      <td class="vertical-text">Spacer</td>
+      <td class="content">Content</td>
+    </tr>
+  </table>
+</body>
+</html>
